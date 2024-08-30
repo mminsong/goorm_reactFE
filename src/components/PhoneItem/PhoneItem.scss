@@ -1,0 +1,29 @@
+/* Sass는 Css Pre-Processor로 기존 Css의 코드를 획기적으로 줄여줄 수 있음 */
+/* 코드 재사용성 뛰어남, 복잡한 작업을 쉽게 할 수 있고 가독성도 좋음 */
+/* Sass에서는 두 가지 확장자(.sass, .scss) 지원 */
+/* 사용하려면 cmd 창에서 yarn add node-sass */
+/* 경로 : src/components/PhoneItem/PhoneItem.scss (원본 : PhoneItem.css) */
+
+.phone_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #495057;
+  padding: 20px;
+
+  /* .phone_item > .phone_item_right > button */
+  .phone_item_right button {
+    color: #fa5252;
+    font-size: 15px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* .phone_item + .phone_item */
+  & + & {
+    margin-top: 15px;
+  }
+}

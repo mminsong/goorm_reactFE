@@ -1,0 +1,40 @@
+/* 경로 : src/components/InputBox/InputBox.module.css (원본 : InputBox.css) */
+/* CSS Module은 css 클래스를 불러올 때 [파일 이름]_[클래스 이름]_[해쉬값]으로 고유한 클래스명 부여하여 동일한 클래스명이 생기지 않게 만드는 기술*/
+
+.input_boxes {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box {
+  padding: 10px 0;
+}
+
+.input_box_name {
+  margin-bottom: 3px;
+}
+
+.input_box_input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input_box_button {
+  margin-left: auto;
+  width: 100px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #495057;
+  background: white;
+  color: #495057;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input_box_button:hover {
+  background: #495057;
+  color: white;
+}
