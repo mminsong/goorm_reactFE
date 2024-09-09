@@ -12,12 +12,12 @@ const Count = styled.div`
 `;
 
 //props : 부모 컴포넌트에게서 받는 데이터
-const Number = (props) => {
-  return <Count>{props.number}</Count>;
-};
+//const Number = (props) => {
+//  return <Count>{props.number}</Count>;
+//};
 // Destructing Assignment 문법을 통해 props 안에 있는 number를 가져옴
-//const Number = ({ number }) => {
-//    return <Count>{number}</Count>;
-//  };
+const Number = ({ number }) => {
+  return <Count>{number}</Count>;
+};
 
 export default Number;
